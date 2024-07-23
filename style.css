@@ -1,0 +1,773 @@
+@import url('https://fonts.googleapis.com/css');
+
+body {
+  font-family: 'poppins', sans-serif;
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: lightseagreen;
+  transition: all .5s ease;
+}
+
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  line-height: 70px;
+  background: darkblue;
+  user-select: none;
+}
+
+.sidebar ol a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, 1);
+  border-bottom: 2px solid red;
+  transition: .5s;
+}
+
+ol li:hover a {
+  padding-left: 50px;
+  background-color: lightsalmon;
+}
+
+.sidebar ol a i {
+  margin-right: 16px;
+}
+
+.handels {
+  padding-top: 30px;
+  color: red;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.handels:hover {
+  color: blue;
+}
+
+#check {
+  display: none;
+}
+
+label #btn,
+label #cancel {
+  position: absolute;
+  cursor: pointer;
+  background: #042331;
+  border-radius: 3px;
+}
+
+label #btn {
+  left: 40;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all .5s;
+}
+
+label #cancel {
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  /* color: #0a5275; */
+  color: white;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+
+#check:checked~.sidebar {
+  left: 0;
+}
+
+#check:checked~label #btn {
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#check:checked~label #cancel {
+  left: 195px;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  background-color: black;
+}
+
+h2 {
+  color: white;
+  padding-left: 170px;
+  padding-top: 30px;
+}
+
+.navbar {
+  padding-left: 400px;
+  margin-top: -30px;
+}
+
+.navbar ul {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+}
+
+.navbar ul :hover {
+  color: #0ef;
+  font-size: 20px;
+}
+
+hr {
+  border: 2px solid red;
+}
+
+.main {
+  height: 400px;
+  width: 100%;
+  background-color: white;
+  background-image: url(software\ engg\ image.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.right {
+  height: 0px;
+  width: 0px;
+  padding-left: 80%;
+  padding-top: 100px;
+}
+
+.left {
+  padding-left: 45%;
+  padding-top: 20px;
+}
+
+.bio {
+  color: black;
+}
+
+main .btn {
+  color: white;
+  background-color: purple;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 15px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+main .btn:hover {
+  background-color: blue;
+  font-size: 0.9rem;
+  border: 2px solid #0ef;
+}
+
+.purple {
+  color: darkorange;
+}
+
+#element {
+  color: red;
+}
+
+h3 {
+  color: #0ef;
+  padding-top: 50px;
+}
+
+span {
+  color: orange;
+}
+
+.skills {
+  color: white;
+  background-color: blue;
+  text-decoration: none;
+  padding-bottom: 50px;
+  display: block;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer {
+  height: 100px;
+  width: 100%;
+  background-color: grey;
+}
+
+.social_media {
+  color: white;
+  padding-left: 46%;
+  font-size: 2rem;
+  padding-top: 10px;
+}
+
+.social_media:hover {
+  color: red;
+}
+
+.rights {
+  color: black;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: lightseagreen;
+    transition: all .5s ease;
+  }
+
+  .sidebar header {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: darkblue;
+    user-select: none;
+  }
+
+  .sidebar ol a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, 1);
+    border-bottom: 2px solid red;
+    transition: .5s;
+  }
+
+  ol li:hover a {
+    padding-left: 50px;
+    background-color: lightsalmon;
+  }
+
+  .sidebar ol a i {
+    margin-right: 16px;
+  }
+
+  .handels {
+    padding-top: 30px;
+    color: red;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .handels:hover {
+    color: blue;
+  }
+
+  #check {
+    display: none;
+  }
+
+  label #btn,
+  label #cancel {
+    position: absolute;
+    cursor: pointer;
+    background: #042331;
+    border-radius: 3px;
+  }
+
+  label #btn {
+    left: 40;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+  }
+
+  label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    /* color: #0a5275; */
+    color: white;
+    padding: 4px 9px;
+    transition: all .5s ease;
+  }
+
+  #check:checked~.sidebar {
+    left: 0;
+  }
+
+  #check:checked~label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  #check:checked~label #cancel {
+    left: 195px;
+  }
+
+  header {
+    height: 100px;
+    width: 100%;
+    background-color: purple;
+  }
+
+  h2 {
+    color: white;
+    padding-left: 250px;
+    padding-top: 20px;
+  }
+
+  .navbar {
+    padding-left: 30px;
+    padding-top: 40px;
+  }
+
+  .navbar ul {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+  }
+
+  .navbar ul :hover {
+    color: #0ef;
+    font-size: 20px;
+  }
+
+  .main {
+    height: 800px;
+    width: 100%;
+    background-color: white;
+    background-image: url(software\ engg\ image.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .right {
+    height: 0px;
+    width: 0px;
+    padding-left: 480px;
+    padding-top: 590px;
+  }
+
+  .left {
+    padding-left: 40px;
+    padding-top: 25px;
+  }
+
+  .bio {
+    color: black;
+  }
+
+  main .btn {
+    color: white;
+    background-color: purple;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: 2px solid black;
+    cursor: pointer;
+  }
+
+  main .btn:hover {
+    background-color: blue;
+    font-size: 0.9rem;
+    border: 2px solid #0ef;
+  }
+
+  .purple {
+    color: darkorange;
+  }
+
+  #element {
+    color: red;
+  }
+
+  .skills {
+    color: white;
+    background-color: blue;
+    text-decoration: none;
+    padding-bottom: 50px;
+    display: block;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .footer {
+    height: 100px;
+    width: 100%;
+    background-color: grey;
+  }
+
+  .social_media {
+    color: white;
+    padding-left: 350px;
+    font-size: 2rem;
+    padding-top: 10px;
+  }
+
+  .social_media:hover {
+    color: red;
+  }
+
+  .rights {
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 414px) and (min-width: 360px) {
+  .sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: lightseagreen;
+    transition: all .5s ease;
+  }
+
+  .sidebar header {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: darkblue;
+    user-select: none;
+  }
+
+  .sidebar ol a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, 1);
+    border-bottom: 2px solid red;
+    transition: .5s;
+  }
+
+  ol li:hover a {
+    padding-left: 50px;
+    background-color: lightsalmon;
+  }
+
+  .sidebar ol a i {
+    margin-right: 16px;
+  }
+
+  .handels {
+    padding-top: 30px;
+    color: red;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .handels:hover {
+    color: blue;
+  }
+
+  #check {
+    display: none;
+  }
+
+  label #btn,
+  label #cancel {
+    position: absolute;
+    cursor: pointer;
+    background: #042331;
+    border-radius: 3px;
+  }
+
+  label #btn {
+    left: 40;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+  }
+
+  label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    /* color: #0a5275; */
+    color: white;
+    padding: 4px 9px;
+    transition: all .5s ease;
+  }
+
+  #check:checked~.sidebar {
+    left: 0;
+  }
+
+  #check:checked~label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  #check:checked~label #cancel {
+    left: 195px;
+  }
+
+  header {
+    height: 100px;
+    width: 100%;
+    background-color: black;
+  }
+
+  h2 {
+    color: white;
+    padding-left: 80px;
+    padding-top: 20px;
+  }
+
+  .navbar {
+    padding-left: 40px;
+    padding-top: 40px;
+  }
+
+  .navbar ul {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+  }
+
+  .navbar ul :hover {
+    color: #0ef;
+    font-size: 20px;
+  }
+
+  .main {
+    height: 800px;
+    width: 100%;
+    background-color: white;
+    background-image: url(software\ engg\ image.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .right {
+    height: 0px;
+    width: 0px;
+    padding-left: 100px;
+    padding-top: 340px;
+  }
+
+  .left {
+    padding-left: 20px;
+    padding-top: 220px;
+  }
+
+  .bio {
+    color: black;
+  }
+
+  main .btn {
+    color: white;
+    background-color: purple;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: 2px solid black;
+    cursor: pointer;
+  }
+
+  main .btn:hover {
+    background-color: blue;
+    font-size: 0.9rem;
+    border: 2px solid #0ef;
+  }
+
+  .purple {
+    color: darkorange;
+  }
+
+  #element {
+    color: red;
+  }
+
+  .skills {
+    color: white;
+    background-color: blue;
+    text-decoration: none;
+    padding-bottom: 50px;
+    display: block;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .footer {
+    height: 100px;
+    width: 100%;
+    background-color: grey;
+  }
+
+  .social_media {
+    color: white;
+    padding-left: 250px;
+    font-size: 2rem;
+    padding-top: 10px;
+  }
+
+  .social_media:hover {
+    color: red;
+  }
+
+  .rights {
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
